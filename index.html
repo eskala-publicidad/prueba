@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Camarena - Estilo App</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 15px;
+        }
+        .app-container {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        .brand {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .brand h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #0f172a;
+        }
+        /* Barra de categorías estilo botones móviles */
+        .categorias-nav {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 15px 0;
+            margin-bottom: 15px;
+        }
+        .btn-categoria {
+            background: #ffffff;
+            color: #475569;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .btn-categoria.activo {
+            background: #0284c7;
+            color: #ffffff;
+            border-color: #0284c7;
+        }
+        /* Tarjetas de comida */
+        .tarjeta-platillo {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+        }
+        .fila-superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .titulo {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1e293b;
+        }
+        .costo {
+            font-size: 15px;
+            font-weight: 600;
+            color: #0284c7;
+            background: #f0f9ff;
+            padding: 4px 10px;
+            border-radius: 8px;
+        }
+        .detalles {
+            font-size: 13px;
+            color: #64748b;
+            margin: 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <div class="brand">
+        <h1>Mariscos Camarena</h1>
+    </div>
+
+    <div class="categorias-nav">
+        <span class="btn-categoria activo">Entradas</span>
+        <span class="btn-categoria">Tostadas</span>
+        <span class="btn-categoria">Filetes</span>
+        <span class="btn-categoria">Bebidas</span>
+    </div>
+
+    <div class="tarjeta-platillo">
+        <div class="fila-superior">
+            <span class="titulo">Orden de Aguachile Verde</span>
+            <span class="costo">205</span>
+        </div>
+        <p class="detalles">Preparado al momento con nuestra receta especial de chiles verdes frescos y cortes selectos.</p>
+    </div>
+
+    <div class="tarjeta-platillo">
+        <div class="fila-superior">
+            <span class="titulo">Paleta de Pulpo en Habanero</span>
+            <span class="costo">205</span>
+        </div>
+        <p class="detalles">Para los amantes del picante intenso y texturas firmes al paladar.</p>
+    </div>
+</div>
+
+</body>
+</html>
